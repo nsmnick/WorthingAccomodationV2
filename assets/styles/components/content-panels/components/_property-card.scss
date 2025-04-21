@@ -1,0 +1,27 @@
+.property-card {
+  height: 100%;
+  background-color: getcolor("white");
+
+  &__image {
+    aspect-ratio: 1.5/1;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+      display: block;
+      line-height: 1;
+    }
+  }
+
+  &__content {
+    background-color: getcolor("white");
+    padding: 20px;
+
+    h3 {
+      color: getcolor("green");
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.container {
+  display: block;
+  width: auto;
+  float: none;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  //border: solid 1px blue;
+
+  padding: 0 calc(18px + 6px);
+  @include bp(lap) {
+    //  border: solid 1px red;
+    max-width: to-rem(1584);
+    padding: 0 40px;
+  }
+
+  @include bp(desk) {
+    //    border: solid 1px yellow;
+    max-width: to-rem(1584);
+    padding: 0 to-rem(80);
+  }
+
+  @include bp(wide) {
+    //  border: solid 1px orange;
+    max-width: to-rem(1584);
+    padding: 0 to-rem(130);
+  }
+
+  &--narrow {
+    @include bp(lap) {
+      max-width: 888px;
+      padding: 0 2rem;
+    }
+  }
+}

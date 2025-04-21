@@ -1,0 +1,219 @@
+&__post-article {
+  .gallery-container {
+    margin-bottom: 60px;
+
+    // Slider
+    .property-gallery-slider {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      overflow: hidden;
+      list-style: none;
+      padding: 0;
+      z-index: 1;
+      position: relative;
+
+      &__slides-wrapper {
+        position: relative;
+        width: 100%;
+
+        min-height: 30rem;
+        max-height: 60rem;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+      }
+
+      &__slide {
+        display: block;
+
+        flex-shrink: 0;
+        position: relative;
+        transition-property: transform;
+
+        img {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__controls {
+        position: absolute;
+        top: calc(50% - 2.2rem);
+        @include bp(lap) {
+          top: calc(50% - 4.4rem);
+        }
+        z-index: 100;
+        margin-top: 1.5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .swiper-button-lock {
+          display: none !important;
+        }
+      }
+
+      &__nav-button {
+        display: inline-block;
+
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        width: 22px;
+        height: 44px;
+
+        @include bp(lap) {
+          width: 44px;
+          height: 88px;
+        }
+
+        &--prev {
+          background-image: url("../images/arrow-left-white.svg");
+          margin-left: 1rem;
+        }
+
+        &--next {
+          background-image: url("../images/arrow-right-white.svg");
+          margin-left: auto;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .property-thumbs-slider {
+      margin-top: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      overflow: hidden;
+
+      max-height: 7rem;
+      @include bp(600px) {
+        max-height: unset;
+      }
+      list-style: none;
+      padding: 0;
+      z-index: 1;
+      position: relative;
+
+      &__slides-wrapper {
+        position: relative;
+        width: 100%;
+        //height: 100px;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+
+        // &:hover {
+        //   cursor: url('../images/dragicon.webp'), auto;
+        // }
+      }
+
+      &__slide {
+        display: block;
+
+        flex-shrink: 0;
+        position: relative;
+        transition-property: transform;
+        aspect-ratio: 1.7/1;
+        max-height: 20rem;
+
+        img {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  .article-container {
+    display: block;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include bp(1095px) {
+      flex-direction: row;
+    }
+
+    &__col1 {
+      order: 2;
+      @include bp(1095px) {
+        order: 1;
+        flex: 0 0 60%;
+        border: solid 1px yellow;
+      }
+
+      .article {
+        margin-bottom: 60px;
+      }
+
+      .share-container {
+        h3 {
+          margin-bottom: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &__col2 {
+      order: 1;
+      @include bp(1095px) {
+        order: 2;
+        flex: 0 0 35%;
+        border: solid 1px yellow;
+      }
+
+      h3 {
+        padding-bottom: 10px;
+        border-bottom: solid 1px getcolor(light_grey);
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      .property-details {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 40px;
+        li {
+          color: getcolor("grey");
+          margin-bottom: 10px;
+
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .cta-actions {
+        display: block;
+        padding-top: 40px;
+        margin-bottom: 40px;
+
+        &.desktop-only {
+          display: none !important;
+          @include bp(1095px) {
+            display: block !important;
+          }
+        }
+      }
+    }
+
+    .cta-actions {
+      display: block;
+      height: 50px;
+      padding-bottom: 60px;
+    }
+  }
+}

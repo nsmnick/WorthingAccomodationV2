@@ -1,0 +1,122 @@
+&__internal-hero-panel {
+  position: relative;
+  box-sizing: border-box;
+  z-index: -1;
+
+  // padding-top: $hero-padding-top-mobile;
+  // padding-bottom: 50px;
+
+  // @include bp(lap) {
+  //   padding-top: $hero-padding-top-lap;
+  // }
+
+  // @include bp(wide) {
+  //   padding-bottom: 130px;
+  //   padding-top: $hero-padding-top;
+  // }
+
+  overflow: hidden;
+
+  .back-link {
+    position: absolute;
+
+    top: unset;
+    bottom: 100px;
+    @include bp(wide) {
+      top: 120px;
+      bottom: unset;
+    }
+    display: block;
+    z-index: 1;
+
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    &__col1 {
+      flex: 0 0 40px;
+    }
+
+    &__col2 {
+      flex: 0 0 auto;
+      a {
+        display: block;
+        font-size: to-rem(16);
+        line-height: to-rem(22);
+        text-decoration: none;
+        width: fit-content;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .back-link__col1 {
+        .circle-button--arrow-left {
+          background-color: getcolor("charcoal-grey");
+
+          &::after {
+            background: url("../images/icons/icon-right-arrow-large-yellow.svg")
+              no-repeat center center;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+  .content-container {
+    position: relative;
+    z-index: 2;
+
+    padding: 50px 0px;
+
+    h1 {
+      word-break: break-word;
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: getcolor("white");
+      margin-bottom: 5px;
+      @include bp(lap) {
+        word-break: initial;
+        max-width: 1000px;
+        margin-bottom: 5px;
+        font-size: 40px;
+      }
+    }
+
+    p.page-hero-introduction {
+      margin: 0;
+
+      font-size: to-rem(18);
+      line-height: to-rem(28);
+      color: getcolor("white");
+
+      @include bp(lap) {
+        font-size: to-rem(20);
+        max-width: 1000px;
+        line-height: to-rem(32);
+      }
+    }
+  }
+
+  // Not sure why these are diff sizes to main sizes above
+  // &.bgc-yellow-orange-grad,
+  // &.bgc-orange-yellow-grad {
+  //   min-height: to-rem(375);
+
+  //   @include bp(lap) {
+  //     min-height: 660px;
+  //   }
+  // }
+
+  &.bgc-green {
+    background-color: getcolor("green");
+
+    .content-container {
+      h1 {
+        color: getcolor("white");
+      }
+    }
+  }
+}

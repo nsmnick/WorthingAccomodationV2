@@ -1,0 +1,195 @@
+.content {
+  //
+  // Generic components used across all panels
+  //
+
+  .icon-underline {
+    position: relative;
+    margin-bottom: 60px;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url("../images/wt-bg.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 194px;
+      height: 23px;
+    }
+  }
+
+  // Used to hide and show desktop and laptop images
+
+  .desktop-only {
+    display: none !important;
+    @include bp(lap) {
+      display: block !important;
+    }
+  }
+
+  .mobile-only {
+    display: block !important;
+    @include bp(lap) {
+      display: none !important;
+    }
+  }
+
+  // This is a tag that allows us to manually add a CR to a text string which only displays on mobile
+  span.mobile-br {
+    display: block;
+    @include bp(600px) {
+      display: inline-block;
+    }
+  }
+
+  //
+  // Generic Component Classes
+  //
+
+  &.tp-none {
+    padding-top: 0px;
+    @include bp(lap) {
+      padding-top: 0px;
+    }
+  }
+
+  &.bp-none {
+    padding-bottom: 0px;
+    @include bp(lap) {
+      padding-bottom: 0px;
+    }
+  }
+
+  // Used for when heading is at top of page behind nav
+  &.tp-large {
+    padding-top: 126px;
+    @include bp(lap) {
+      padding-top: 202px;
+    }
+  }
+
+  &.bp-large {
+    padding-bottom: 126px;
+    @include bp(lap) {
+      padding-bottom: 202px;
+    }
+  }
+
+  &.tp-extra-large {
+    padding-top: 126px;
+    @include bp(lap) {
+      padding-top: 202px;
+    }
+  }
+
+  &.bp-extra-large {
+    padding-bottom: 146px;
+    @include bp(lap) {
+      padding-bottom: 222px;
+    }
+  }
+
+  &.tp-small {
+    padding-top: 20px;
+    @include bp(lap) {
+      padding-top: 40px;
+    }
+  }
+
+  &.bp-small {
+    padding-bottom: 20px;
+    @include bp(lap) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &.tp-medium {
+    padding-top: 60px;
+    @include bp(lap) {
+      padding-top: 80px;
+    }
+  }
+
+  &.bp-medium {
+    padding-bottom: 60px;
+    @include bp(lap) {
+      padding-bottom: 80px;
+    }
+  }
+
+  //
+  // Colours
+  //
+
+  &.bgc-back-grey {
+    background-color: getcolor("back_grey");
+  }
+
+  &.bgc-green {
+    background-color: getcolor("green");
+  }
+
+  //
+  // Custom Classes: These can be added in CMS to override standard settings.
+  //
+
+  // Used to Image-Text_panel on home page.
+  &.small-top-padding-mobile {
+    padding-top: 20px;
+
+    @include bp(1150px) {
+      padding: 130px 0;
+    }
+  }
+
+  &.custom-page-hero-title-46 {
+    h2 {
+      font-size: to-rem(46);
+      @include lhCrop(46);
+      line-height: to-rem(50);
+
+      @include bp(lap) {
+        font-size: to-rem(68);
+        @include lhCrop(68);
+        line-height: to-rem(64);
+      }
+
+      @include bp(wide) {
+        font-size: to-rem(88);
+        @include lhCrop(88);
+        line-height: to-rem(82);
+        margin-bottom: 46px;
+      }
+    }
+  }
+
+  //
+  // Include Panels
+  //
+
+  @import "404-panel";
+
+  //ACF Blocks
+  @import "./content-panels/hero-slider-panel";
+  @import "./content-panels/featured-properties-panel";
+  @import "./content-panels/simple-text-panel";
+  @import "./content-panels/icons-features-panel";
+  @import "./content-panels/internal-hero-panel";
+  @import "./content-panels/quotes-panel";
+  @import "./content-panels/quotes-ads-panel";
+  @import "./content-panels/properties-list-panel";
+  @import "./content-panels/content-ads-panel";
+  @import "./content-panels/faq-panel";
+  @import "./content-panels/post-article";
+
+  //Components
+  @import "./content-panels/components/property-card";
+  @import "./content-panels/components/generic-lister";
+  @import "./content-panels/components/accordion";
+  @import "./content-panels/components/social-shares";
+  @import "./content-panels/components/popular-accommodation.scss";
+}

@@ -1,0 +1,243 @@
+.accordion {
+  @include clearfix;
+
+  details {
+    @include clearfix;
+    border-bottom: 1px solid getcolor("light_grey");
+
+    background-color: transparent;
+    cursor: pointer;
+
+    position: relative;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    .accordion-title {
+      //border: solid 1px red;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+
+      background-color: transparent;
+      &__col1 {
+        flex: 1 1 auto;
+
+        padding: 25px 0px 25px;
+        @include bp(wide) {
+          padding: 30px 0px 30px;
+        }
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h3 {
+          font-size: 20px;
+          line-height: 1.4;
+          margin: 0 0 0;
+          @include bp(wide) {
+            font-size: 28px;
+            line-height: 1.4;
+          }
+        }
+
+        cursor: pointer;
+      }
+
+      &__col2 {
+        flex: 0 0 30px;
+
+        .accordion-icon {
+          position: relative;
+          width: to-rem(55);
+          height: to-rem(55);
+          display: inline-block;
+          border-radius: 50%;
+          box-sizing: border-box;
+          border: solid 1px getcolor("green");
+          background-color: transparent;
+          transition: all 500ms ease-in-out;
+
+          width: to-rem(33);
+          height: to-rem(33);
+
+          @include bp(lap) {
+            width: to-rem(40);
+            height: to-rem(40);
+          }
+
+          &__left,
+          &__right {
+            $anim-speed: 0.3s;
+            background-color: getcolor("green");
+
+            height: 1px;
+            position: absolute;
+            top: 15px;
+            width: 15px;
+            @include bp(lap) {
+              top: 18px;
+              width: 20px;
+            }
+            transition:
+              background-color 0s linear,
+              // Unwind minus sign to plus
+              transform 0.5s ease-in-out;
+          }
+
+          &__left {
+            left: 8px;
+            @include bp(lap) {
+              left: 9px;
+            }
+          }
+
+          &__right {
+            left: 8px;
+            @include bp(lap) {
+              left: 9px;
+            }
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+
+    // This overrides the open state, as this is not removed till after the animation finishes.
+    &.closing-faq {
+      .accordion-title__col2 {
+        .accordion-icon {
+          background-color: transparent !important;
+
+          &__right {
+            transform: rotate(90deg) !important;
+            background-color: getcolor("black") !important;
+          }
+        }
+      }
+    }
+
+    // &.show-highlight {
+    //   // &::before {
+    //   //   transition: opacity 0.1s linear;
+    //   //   opacity: 1;
+    //   // }
+    // }
+    &[open] {
+      summary {
+        margin-bottom: 0px;
+        // border-radius: 10px 10px 0px 0px;
+        z-index: 1;
+        //       transition: all 3s ease-in;
+      }
+
+      .content {
+        //background-color: red;
+        //transform: translateY(100px);
+        //transition: all 1s linear;
+      }
+
+      .accordion-title__col2 {
+        .accordion-icon {
+          background-color: getcolor("green");
+          &__left,
+          &__right {
+            $anim-speed: 0.2s;
+          }
+
+          &__right {
+            left: 8px;
+            @include bp(lap) {
+              left: 9px;
+            }
+            transform: rotate(180deg);
+            transition: 0.5s ease-in-out;
+            background-color: getcolor("white");
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    color: getcolor("dark_grey");
+
+    padding-left: 0px;
+    padding-bottom: 30px;
+    @include bp(lap) {
+      padding-bottom: 50px;
+    }
+    padding-right: 40px;
+    border-top: 0;
+
+    > *:first-child {
+      margin-top: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+
+    // This container is for more complex content such as the leadership and locations panels
+
+    // .column-container {
+    //   @include bp(1250px) {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     gap: 130px;
+    //   }
+    //   &__col1 {
+    //     margin-bottom: 20px;
+    //     @include bp(1250px) {
+    //       flex: 0 0 350px;
+    //       margin-bottom: 0px;
+    //     }
+
+    //     box-sizing: border-box;
+
+    //     img {
+    //       max-width: 436px;
+    //       border-radius: 12px;
+    //       display: block;
+    //       line-height: 1;
+    //       width: 100%;
+    //       aspect-ratio: 1/0.8;
+    //     }
+
+    //     .google-map {
+    //       display: block;
+    //       width: 100%;
+    //       height: 350px;
+    //       border-radius: 12px;
+    //       overflow: hidden;
+    //       @include bp(lap) {
+    //         height: 350px;
+    //       }
+    //     }
+    //   }
+
+    //   &__col2 {
+    //     @include bp(1250px) {
+    //       flex: 1 1 auto;
+    //     }
+
+    //     box-sizing: border-box;
+
+    //     .content-container {
+    //       margin-bottom: 10px;
+
+    //       p:first-child {
+    //         margin-top: 0;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}

@@ -1,0 +1,67 @@
+&__quotes-ads-panel {
+  .content-container {
+    @include bp(lap) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__col1 {
+      margin-bottom: 60px;
+
+      @include bp(lap) {
+        flex: 0 0 60%;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 100px;
+        @include bp(lap) {
+          margin-bottom: 140px;
+        }
+      }
+
+      .quote {
+        border-bottom: solid 1px getcolor("light_grey");
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+        padding: 20px 20px 30px;
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 20px;
+
+        .quotemarks {
+          background-image: url("../images/quote.webp");
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 25px;
+          height: 20px;
+          margin: 0rem auto 10px;
+          @include bp(lap) {
+            width: 25px;
+            height: 20px;
+            margin: 0rem auto 10px;
+          }
+        }
+        .quotecontent {
+          font-style: italic;
+          color: getcolor("grey");
+
+          max-width: 400px;
+          margin: 0 auto 10px;
+        }
+
+        .quoteby {
+          color: getcolor("green");
+        }
+      }
+    }
+
+    &__col2 {
+      @include bp(lap) {
+        flex: 0 0 35%;
+      }
+    }
+  }
+}

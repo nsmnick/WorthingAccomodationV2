@@ -1,0 +1,43 @@
+// Site Colours
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey: #8e939a;
+$color-dark-grey: #727272;
+$color-green: #5c9071;
+$color-light-grey: #e5e5e5;
+$color-back-grey: #f7f7f7;
+$color-blue: #463d86;
+
+// Generic Colours
+$c-body-text: $color-black;
+$c_hyperlink: $color-black;
+$c_hyperlink_hover: $color-black;
+
+/* 
+RGB values.
+*/
+$color-rgb-white: getrgb($color-white);
+$color-rgb-black: getrgb($color-black);
+
+@include set-vars(
+  (
+    "white": $color-white,
+    "black": $color-black,
+    "grey": $color-grey,
+    "back_grey": $color-back-grey,
+    "blue": $color-blue,
+    "green": $color-green,
+    "light_grey": $color-light-grey,
+    "dark_grey": $color-dark-grey,
+  ),
+  "color"
+);
+
+@include set-vars(
+  (
+    "white": $color-rgb-white,
+    "black": $color-rgb-black,
+  ),
+  "color-rgb"
+);

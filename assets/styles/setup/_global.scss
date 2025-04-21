@@ -1,0 +1,16 @@
+$border-radius-sm: to-rem(8);
+$border-radius-lg: to-rem(12);
+
+$wide-gutter: 8;
+$wide-gutter-mobile: 6;
+// $mobile-menu-snap: 1060px;
+$mobile-menu-snap: 1240px;
+
+// Used for hero panels that display a meta-heading so they are always in
+// the right place for desktop and mobile.
+$hero-padding-top: 202px;
+$hero-padding-top-lap: 150px;
+$hero-padding-top-mobile: 126px;
+
+// This is used to turn button transition speeds off on mobile
+$button_transition_width: 400px;

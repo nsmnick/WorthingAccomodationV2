@@ -1,0 +1,8 @@
+.panel {
+  background-color: getcolor("white");
+  padding: to-rem(80) to-rem(0);
+
+  @include bp(wide) {
+    padding: to-rem(130) 0;
+  }
+}

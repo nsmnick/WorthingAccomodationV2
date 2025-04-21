@@ -1,0 +1,194 @@
+.page-header {
+  //  position: relative;
+
+  @include bp($mobile-menu-snap) {
+  }
+
+  height: to-rem(74);
+
+  @include bp($mobile-menu-snap) {
+    height: to-rem(172);
+  }
+
+  z-index: 100;
+  display: block;
+  background-color: getcolor("white");
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0px 10px;
+
+    &__col1 {
+      flex: 0 0 to-rem(210);
+      @include bp($mobile-menu-snap) {
+        flex: 0 0 to-rem(330);
+      }
+
+      .site-header-logo {
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        width: 101px;
+        height: 50px;
+        background-image: url("../images/worthing_accommodation_logo_white_bg.jpg");
+        @include bp($mobile-menu-snap) {
+          width: 202px;
+          height: 100px;
+          background-image: url("../images/worthing_accommodation_logo_white_bg.jpg");
+        }
+      }
+    }
+
+    &__col2 {
+      flex: 1 1 100%;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+
+      text-align: right;
+      //height: 30px;
+      .contact-container {
+        display: none;
+        @include bp($mobile-menu-snap) {
+          display: flex;
+          flex-direction: column;
+          width: fit-content;
+          margin-left: auto;
+          margin-right: 0;
+          &__row {
+            //border: solid 1px yellow;
+            padding: 5px 0px;
+            text-align: right;
+
+            &:first-of-type {
+              border-bottom: 1px solid getcolor("light_grey");
+            }
+
+            .email_address {
+              color: getcolor("green");
+              text-decoration: none;
+              font-size: to-rem(19);
+            }
+
+            .phone_number {
+              color: getcolor("green");
+              text-decoration: none;
+              font-family: get-font-family("heading");
+              font-size: to-rem(21);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    display: block;
+    @include bp($mobile-menu-snap) {
+      display: none;
+    }
+
+    &__button {
+      width: to-rem(35);
+      height: to-rem(35);
+      position: relative;
+      margin-top: to-rem(6);
+      margin-right: to-rem(10);
+      cursor: pointer;
+      align-self: flex-end;
+      z-index: 999;
+    }
+
+    &__left,
+    &__right {
+      $anim-speed: 0.2s;
+
+      background-color: getcolor("blue");
+      width: 20px;
+      height: 2px;
+      position: absolute;
+      top: 15px;
+      transition:
+        background-color 0s linear,
+        transform $anim-speed linear;
+
+      &::before,
+      &::after {
+        content: "";
+        background-color: getcolor("blue");
+        display: block;
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        transition: transform $anim-speed linear;
+      }
+
+      &::before {
+        top: -10px;
+      }
+
+      &::after {
+        top: 10px;
+      }
+    }
+
+    &__left {
+      left: 0;
+    }
+
+    &__right {
+      left: 15px;
+    }
+
+    &--open {
+      .mobile-menu-toggle {
+        z-index: 100;
+        &__left,
+        &__right {
+          background: transparent;
+        }
+
+        &__left {
+          &::before {
+            background-color: getcolor("blue");
+            transform: rotateZ(45deg) scaleX(0.9) translate(0.4rem, 2px);
+          }
+
+          &::after {
+            background-color: getcolor("blue");
+            transform: rotateZ(-45deg) scaleX(0.9) translate(0.4rem, -2px);
+          }
+        }
+
+        &__right {
+          &::before {
+            background-color: getcolor("blue");
+            transform: rotateZ(-45deg) scaleX(0.9) translate(-0.4rem, 2px);
+          }
+
+          &::after {
+            background-color: getcolor("blue");
+            transform: rotateZ(45deg) scaleX(0.9) translate(-0.4rem, -2px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-menu {
+  background-color: getcolor("grey");
+  border-bottom: solid 1px getcolor("light_grey");
+}

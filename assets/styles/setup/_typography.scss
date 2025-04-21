@@ -1,0 +1,28 @@
+/*
+Font Weight Ref:
+
+100 Thin (Hairline)
+200 Extra Light (Ultra Light)
+300 Light
+400 Normal/Book
+500 Medium
+600 Semi Bold (Demi Bold)
+700 Bold
+800 Extra Bold (Ultra Bold)
+900 Black (Heavy)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@include set-vars(
+  (
+    "main": "PT Serif, sans-serif",
+    "heading": "Abril Fatface, serif",
+    "main-heading": "Lora, serif",
+  ),
+  "font-family"
+);
+
+@function get-font-family($name) {
+  @return get-var($name, "font-family");
+}

@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "founders-grotesk";
+  src: url("../fonts/FoundersGrotesk/FoundersGrotesk-Light.otf")
+    format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "founders-grotesk";
+  src: url("../fonts/FoundersGrotesk/FoundersGrotesk-Regular.otf")
+    format("opentype");
+  src: url("../fonts/FoundersGrotesk/FoundersGrotesk-Regular.woff2")
+    format("woff2");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "founders-grotesk";
+  src: url("../fonts/FoundersGrotesk/FoundersGrotesk-Medium.otf")
+    format("opentype");
+  src: url("../fonts/FoundersGrotesk/FoundersGrotesk-Medium.woff2")
+    format("woff2");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+.tk-founders-grotesk {
+  font-family: "founders-grotesk", sans-serif;
+}

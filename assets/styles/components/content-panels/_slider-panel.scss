@@ -1,0 +1,222 @@
+&__slider-panel {
+  overflow: hidden;
+  .content-container {
+    &__heading {
+      position: relative;
+
+      margin-bottom: 60px;
+      @include bp(wide) {
+        margin-bottom: 100px;
+      }
+
+      h3.section-title-small {
+        font-weight: 400;
+        @include bp(wide) {
+          margin: 0;
+        }
+      }
+    }
+
+    .use-case-slider__controls {
+      height: 55px;
+      width: fit-content;
+
+      @include bp(1080px) {
+        position: absolute;
+        top: 5px;
+        right: 0;
+      }
+
+      &__button {
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+      }
+
+      &.three-slides {
+        @include bp(1080px) {
+          display: none;
+        }
+      }
+    }
+
+    .use-case-slider {
+      position: relative;
+      overflow: visible;
+      width: 100%;
+
+      &__slides-wrapper {
+        display: block;
+      }
+
+      &__slides {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        transition-timing-function: var(
+          --swiper-wrapper-transition-timing-function,
+          initial
+        );
+        box-sizing: content-box;
+      }
+
+      &__slide {
+        flex-shrink: 0;
+        display: block;
+        width: 100%;
+        position: relative;
+        transition-property: transform;
+
+        h4 {
+          font-size: to-rem(44);
+          @include lhCrop(44);
+          line-height: to-rem(47);
+          margin: 0;
+
+          // @include bp(lap) {
+          //   font-size: to-rem(54);
+          //   @include lhCrop(54);
+          //   line-height: to-rem(58);
+          // }
+
+          @include bp(wide) {
+            font-size: to-rem(64);
+            @include lhCrop(64);
+            line-height: to-rem(68);
+          }
+        }
+
+        p {
+          max-width: 373px;
+          margin-bottom: 0;
+        }
+
+        .title-container {
+          margin-bottom: 22px;
+          //  min-height: 140px;
+          @include bp(1450px) {
+            margin-bottom: 0px;
+            //  min-height: 100px;
+          }
+
+          @include bp(wide) {
+            margin-bottom: 0;
+            //  min-height: 120px;
+          }
+        }
+      }
+    }
+  }
+
+  &.bgc-white {
+    .content-container {
+      .use-case-slider__controls {
+        &__button {
+          &.circle-button--arrow-left {
+            &:hover {
+              &::after {
+                background: url("../images/icons/icon-right-arrow-white.svg")
+                  no-repeat center;
+                background-size: contain;
+              }
+            }
+          }
+
+          &.circle-button--arrow-right {
+            &:hover {
+              &::after {
+                background: url("../images/icons/icon-right-arrow-white.svg")
+                  no-repeat center;
+                background-size: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.bgc-charcoal-grey {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: 0;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom left;
+
+      background-image: url("../images/decorators/pattern-dots-bottom-right.webp");
+      width: 714px;
+      aspect-ratio: 0.52/1;
+    }
+
+    h2.meta-heading {
+      color: getcolor("white");
+    }
+    .content-container {
+      &__heading {
+        h3 {
+          color: getcolor("white");
+        }
+      }
+
+      .use-case-slider__controls {
+        &__button {
+          border: solid 1px getcolor("white");
+
+          &.circle-button--arrow-left {
+            &::after {
+              content: "";
+              background: url("../images/icons/icon-right-arrow-white.svg")
+                no-repeat center;
+            }
+
+            &:hover {
+              background-color: getcolor("white");
+              &::after {
+                background: url("../images/icons/icon-right-arrow-black.svg")
+                  no-repeat center;
+              }
+            }
+          }
+
+          &.circle-button--arrow-right {
+            &::after {
+              content: "";
+              background: url("../images/icons/icon-right-arrow-white.svg")
+                no-repeat center;
+            }
+
+            &:hover {
+              background-color: getcolor("white");
+              &::after {
+                background: url("../images/icons/icon-right-arrow-black.svg")
+                  no-repeat center;
+              }
+            }
+          }
+        }
+      }
+
+      .use-case-slider {
+        &__slide {
+          h4 {
+            color: getcolor("medium-gray");
+          }
+
+          p {
+            color: getcolor("medium-gray");
+          }
+        }
+      }
+    }
+  }
+}

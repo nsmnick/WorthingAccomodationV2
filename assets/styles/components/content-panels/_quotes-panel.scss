@@ -1,0 +1,157 @@
+&__quotes-panel {
+  text-align: center;
+
+  h2.icon-underline {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  padding-bottom: 70px;
+  @include bp(lap) {
+    padding-bottom: 70px;
+  }
+
+  .quotes-slider {
+    position: relative;
+
+    //padding-top: 4rem;
+    position: relative;
+    overflow: hidden;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+    @include bp(lap) {
+      max-width: 1000px;
+    }
+    &__slides {
+      box-sizing: content-box;
+      text-align: center;
+      z-index: 1;
+      display: flex;
+      margin-bottom: 4rem;
+    }
+
+    &__slide {
+      flex-shrink: 0;
+      border: solid 1px getcolor("light_grey");
+      background-color: getcolor("light_grey");
+      border-radius: 30px;
+      box-sizing: border-box;
+
+      .slide-content {
+        padding: 40px 20px;
+
+        @include bp(lap) {
+          max-width: 960px;
+          padding: 40px 100px;
+        }
+        margin: 0 auto;
+        height: auto;
+        .quote-marks {
+          background-image: url("../images/quote.webp");
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 35px;
+          height: 27px;
+          margin: 0rem auto 30px;
+        }
+
+        color: getcolor("white");
+
+        .quote {
+          max-width: 61rem;
+          margin: 0 auto 20px;
+
+          font-size: 20px;
+          @include bp(lap) {
+            font-size: 24px;
+          }
+          color: getcolor("grey");
+        }
+        .quote_by {
+          text-transform: uppercase;
+          max-width: 61rem;
+          margin: 0 auto;
+          font-size: 15px;
+          @include bp(lap) {
+            font-size: 16px;
+          }
+          color: getcolor("green");
+        }
+      }
+    }
+
+    position: relative;
+    &__pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      width: 33.33%;
+      position: relative;
+
+      z-index: 2;
+      margin: -40px auto 0rem;
+
+      &__bullet {
+        &:only-child {
+          visibility: hidden;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1;
+        width: 12px;
+        background-color: getcolor("grey");
+        border: solid 1px getcolor("white");
+        border-radius: 50%;
+        user-select: none;
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          display: block;
+          aspect-ratio: 1;
+          width: 100%;
+          background-color: transparent;
+          border-radius: 50%;
+          transition: background-color 0.3s linear;
+        }
+
+        &--active {
+          &::before {
+            background-color: getcolor("blue");
+          }
+        }
+      }
+    }
+  }
+
+  &.bgc-white {
+    // h2.heading {
+    //   color: getcolor("brand_black");
+    // }
+
+    // .quotes-slider {
+    //   &__slide {
+    //     .slide-content {
+    //       .quote-marks {
+    //         background-image: url("../images/quote-marks-blue.svg");
+    //       }
+
+    //       border: solid 1px getcolor("sand");
+    //       color: getcolor("brand_black");
+
+    //       .quote {
+    //         color: getcolor("brand_black");
+    //       }
+    //       .quote_by {
+    //         color: getcolor("brand_black");
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}

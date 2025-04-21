@@ -1,0 +1,145 @@
+.socials {
+  h3.footer-heading {
+    background-color: red;
+    color: red;
+  }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+
+  max-width: fit-content;
+  margin: 0 auto;
+
+  @include bp(lap) {
+    max-width: unset;
+    margin: 0;
+  }
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &__item {
+    padding-right: 20px;
+    &:last-child {
+      padding-right: initial;
+    }
+    &__link {
+      span {
+        display: none;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 3rem;
+        height: 2.7rem;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        transition: opacity 0.2s ease-out;
+      }
+
+      &--linkedin {
+        &::before {
+          width: 2.6rem;
+          height: 2.5rem;
+          background-image: url("../images/social-linkedin.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &--instagram {
+        &::before {
+          width: 2.6rem;
+          height: 2.5rem;
+          background-image: url("../images/social-instagram.webp");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &--vimeo {
+        &::before {
+          width: 2.5rem;
+          height: 2.5rem;
+          background-image: url("../images/social-vimeo.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &--twitter {
+        &::before {
+          width: 2.5rem;
+          height: 2.3rem;
+          background-image: url("../images/social-x.webp");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &--facebook {
+        &::before {
+          width: 2.5rem;
+          height: 2.3rem;
+          background-image: url("../images/social-facebook.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &:hover {
+        &::before {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  &--light {
+    .socials {
+      &__item {
+        &__link {
+          &--linkedin {
+            &::before {
+              background-image: url("../images/social-linkedin-white.svg");
+            }
+          }
+
+          &--instagram {
+            &::before {
+              background-image: url("../images/social-instagram-white.webp");
+            }
+          }
+
+          &--vimeo {
+            &::before {
+              background-image: url("../images/social-vimeo-white.webp");
+            }
+          }
+
+          &--twitter {
+            &::before {
+              background-image: url("../images/social-x-white.png");
+            }
+          }
+
+          &--facebook {
+            &::before {
+              background-image: url("../images/social-facebook-white.svg");
+            }
+          }
+        }
+      }
+    }
+  }
+}

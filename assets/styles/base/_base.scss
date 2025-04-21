@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+  overflow: hidden auto;
+  scroll-behavior: smooth;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a[x-apple-data-detectors="true"] {
+    color: inherit !important;
+    text-decoration: inherit !important;
+  }
+}
+
+body {
+  background-color: get-color("white");
+  font-family: get-font-family("main");
+  color: get-color("green");
+
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.1;
+
+  font-size: to-rem(18);
+  line-height: 1.2;
+  @include bp(lap) {
+    font-size: to-rem(19);
+    line-height: 1.2;
+  }
+}
+
+// Page Headers
+h1 {
+  font-size: to-rem(80);
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0 0 40px;
+  @include bp(desk) {
+    font-size: to-rem(104);
+  }
+}
+
+// Page Headers
+h2 {
+  font-size: to-rem(32);
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0 0 to-rem(40);
+  color: getcolor("green");
+  font-family: get-font-family("heading");
+
+  @include bp(desk) {
+    font-size: to-rem(40);
+  }
+}
+
+h3 {
+  font-size: to-rem(20);
+  font-weight: 500;
+  margin: 0 0 to-rem(40);
+  line-height: 1;
+  color: getcolor("green");
+
+  @include bp(desk) {
+    font-size: to-rem(22);
+  }
+}
+
+h4 {
+  font-size: to-rem(40);
+  font-weight: 400;
+  color: getcolor("dark_grey");
+
+  @include bp(desk) {
+    font-size: to-rem(64);
+  }
+}
+
+h5 {
+  font-size: to-rem(30);
+  font-weight: 400;
+  margin: 0;
+  line-height: 1;
+  color: getcolor("dark_grey");
+
+  @include bp(desk) {
+    font-size: to-rem(56);
+  }
+}
+
+h6 {
+  font-size: to-rem(20);
+  font-weight: 400;
+  color: getcolor("dark_grey");
+
+  @include bp(desk) {
+    font-size: to-rem(40);
+  }
+}
+
+p {
+  color: getcolor("dark_grey");
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: underline;
+  color: getcolor("dark_grey");
+
+  &.no-ul {
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: getcolor("blue");
+  }
+}

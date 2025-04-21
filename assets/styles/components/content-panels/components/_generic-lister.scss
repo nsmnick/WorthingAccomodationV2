@@ -1,0 +1,317 @@
+$dcp_mobile_snap1: 700px;
+$dcp_mobile_snap2: 1100px;
+
+// Posts Search
+.posts-search {
+  &__form {
+    margin: 0 auto 40px;
+
+    border-bottom: solid 1px getcolor("light_grey");
+    padding-bottom: 20px;
+    @include bp(lap) {
+      margin: 0 auto 80px;
+    }
+
+    .filters {
+      width: 100%;
+      list-style: none;
+
+      display: flex;
+      justify-content: space-between;
+
+      margin-bottom: 20px;
+      @include bp(lap) {
+        margin-bottom: 30px;
+      }
+      margin-top: 0px;
+      padding: 0rem;
+
+      li {
+        //border: solid 1px red;
+        flex: 0 0 32%;
+
+        .label {
+          display: block;
+          border-bottom: 1px solid getcolor("grey");
+          margin-bottom: 5px;
+        }
+
+        position: relative;
+        &:after {
+          content: "";
+          background-image: url("../images/chevron.webp");
+          background-repeat: no-repeat;
+          background-size: contain;
+          right: 0px;
+          bottom: 6px;
+          display: block;
+          height: 18px;
+          pointer-events: none;
+          position: absolute;
+          right: 0;
+          -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+          width: 16px;
+        }
+
+        &.no-drop {
+          &:after {
+            content: none;
+          }
+        }
+
+        .filter-input {
+          appearance: none;
+          font-weight: 400;
+          width: 100%;
+          padding: 8px 12px;
+          border: none;
+          padding: 0px;
+        }
+
+        .active {
+          color: getcolor("white");
+          background: getcolor("charcoal-grey");
+        }
+      }
+    }
+
+    .reset-button {
+      width: auto;
+      margin-left: auto;
+      margin-right: 0;
+      display: block;
+      background-color: inherit;
+
+      @include bp(lap) {
+        text-align: right;
+      }
+
+      white-space: nowrap;
+
+      font-weight: 600;
+      font-size: 15px;
+
+      position: relative;
+      border: none;
+      color: getcolor("grey");
+      position: relative;
+      padding-left: 15px;
+
+      &::before {
+        content: "";
+        background-image: url("../images/reset.svg");
+        background-size: contain;
+        width: 9px;
+        height: 9px;
+
+        position: absolute;
+        left: 0;
+        top: 5px;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .form {
+      .search-bar-container {
+        padding: 0px 20px;
+        width: 100%;
+        background-color: rgb(getcolorrgb("grey1") / 50%);
+        border-radius: 50px;
+        height: auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+
+        &__col1 {
+          flex: 0 0 30px;
+
+          .search-icon {
+            background-image: url("../images/icon-mag-glass.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 19px;
+            width: 19px;
+          }
+        }
+
+        &__col2 {
+          flex: 1 1 auto;
+
+          input[type="text"] {
+            width: 100%;
+            margin-right: 30px;
+            -webkit-appearance: none;
+            -webkit-box-shadow: none;
+            -webkit-transition: all 0.3s ease-in-out;
+            background: transparent;
+            background-color: transparent;
+            border: none;
+            border-radius: 0px;
+            padding: 8px 10px 1px;
+            box-shadow: none;
+            color: getcolor("charcoal_grey");
+            display: block;
+            box-sizing: border-box;
+            cursor: pointer;
+
+            &:focus {
+              outline: 0;
+            }
+          }
+        }
+
+        &__col3 {
+          flex: 0 0 100px;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  &__no-results {
+    text-align: center;
+  }
+
+  &__results-info {
+    display: block;
+    font-weight: 500;
+
+    font-size: 24px;
+    line-height: 32px;
+
+    @include bp(lap) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    color: getcolor("medium-gray");
+
+    span {
+      color: getcolor("charcoal-grey");
+    }
+  }
+
+  &__results {
+    margin: 0 auto;
+
+    // @include bp(tab) {
+    //   @include flex-columns(16, 2);
+    // }
+    // @include bp(1140px) {
+    //   @include flex-columns(16, 3);
+    // }
+  }
+
+  &__post {
+    margin-bottom: 16px;
+    @include bp(tab) {
+      margin-bottom: 60px;
+    }
+
+    .property-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      &__col1 {
+        flex: 0 0 60%;
+        //border: solid 1px yellow;
+
+        img {
+          display: block;
+          width: 100%;
+          aspect-ratio: 1.5/1;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      &__col2 {
+        flex: 0 0 35%;
+        //border: solid 1px yellow;
+
+        padding-top: 0px;
+        @include bp(desk) {
+          padding: 50px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        h2 {
+          margin-bottom: 5px;
+        }
+
+        p {
+          display: block;
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      .property-container {
+        &__col1 {
+          order: 2;
+        }
+        &__col2 {
+          order: 1;
+        }
+      }
+    }
+  }
+
+  &__event-results {
+    margin: 0 auto;
+  }
+
+  &__load-more {
+    //   display: block;
+    //width: fit-content;
+    margin: 90px auto 0px;
+    @include bp(lap) {
+      margin: 90px auto 0px;
+    }
+    text-align: center;
+  }
+
+  &__loading-spinner {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 30px auto 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      aspect-ratio: 1;
+      width: to-rem(26);
+      background-color: transparent;
+      border: 0.3rem solid getcolor("grey");
+      border-top-color: transparent;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: center;
+      transform: translate(-50%, -50%);
+      animation: loading-button-spinner 1s linear infinite;
+    }
+  }
+
+  @keyframes loading-button-spinner {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.button-center-container {
+  text-align: center;
+  margin: 0 auto;
+
+  &.mt-40 {
+    margin-top: 40px;
+  }
+
+  &.mt-60 {
+    margin-top: 60px;
+  }
+}
+
+button.button,
+a.button,
+div.button {
+  position: relative;
+  padding: 11px 20px 12px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+  font-size: to-rem(16);
+
+  font-weight: 400;
+  border-radius: 30px;
+  background-color: getcolor("green");
+
+  @include bp($button_transition_width) {
+    transition: all 200ms ease-in-out forwards;
+  }
+
+  color: getcolor("white");
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.block {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &--fixed-width {
+    width: 150px;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+}

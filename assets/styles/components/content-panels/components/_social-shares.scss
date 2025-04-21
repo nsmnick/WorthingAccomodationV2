@@ -1,0 +1,104 @@
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  width: fit-content;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+
+  gap: 30px;
+  @include bp(lap) {
+    gap: 10px;
+  }
+
+  &__item {
+    &__link {
+      span {
+        display: none;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 19px;
+        height: 19px;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        transition: opacity 0.2s ease-out;
+      }
+
+      &--linkedin {
+        &::before {
+          width: 19px;
+          height: 19px;
+          background-image: url("../images/social/icon-linkedin.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &--x {
+        &::before {
+          width: 19px;
+          height: 19px;
+          background-image: url("../images/social/icon-x.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &--facebook {
+        &::before {
+          width: 19px;
+          height: 19px;
+          background-image: url("../images/logo-facebook.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &--whatsapp {
+        &::before {
+          width: 19px;
+          height: 19px;
+          background-image: url("../images/social/icon-whatsapp.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &--email {
+        &::before {
+          width: 19px;
+          height: 19px;
+          background-image: url("../images/social/icon-email.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &--copylink {
+        &::before {
+          width: 19px;
+          height: 19px;
+          background-image: url("../images/social/icon-link.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &:hover {
+        &::before {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}

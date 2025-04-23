@@ -19,7 +19,7 @@ export default function initSliders() {
     wrapperClass: "image-slider__slides",
     slideClass: "image-slider__slide",
     autoplay: {
-      delay: 7500,
+      delay: 2500,
       disableOnInteraction: false,
     },
   });
@@ -30,7 +30,7 @@ export default function initSliders() {
     loop: true,
     spaceBetween: 20,
     autoplay: {
-      delay: 3500,
+      delay: 7500,
       disableOnInteraction: false,
     },
     wrapperClass: "quotes-slider__slides",
@@ -49,24 +49,26 @@ export default function initSliders() {
   const propertyThumbsSwiper = new Swiper(".property-thumbs-slider", {
     modules: [Navigation, Pagination, Thumbs],
     spaceBetween: 10,
-    slidesPerView: 4,
+    //slidesPerView: 4,
+    slidesPerView: "auto",
     centerInsufficientSlides: true,
     freeMode: true,
     lazy: true,
     watchSlidesProgress: true,
     wrapperClass: "property-thumbs-slider__slides-wrapper",
     slideClass: "property-thumbs-slider__slide",
-    breakpoints: {
-      640: {
-        slidesPerView: 6,
-      },
-    },
+    // breakpoints: {
+    //   640: {
+    //     slidesPerView: 6,
+    //   },
+    // },
   });
 
   const propertySwiper = new Swiper(".property-gallery-slider", {
     modules: [Navigation, Pagination, Thumbs],
-    slidesPerView: 1,
-    spaceBetween: 0,
+    //slidesPerView: 1,
+    slidesPerView: "auto",
+    //spaceBetween: 0,
     loop: false,
     lazy: true,
     wrapperClass: "property-gallery-slider__slides-wrapper",

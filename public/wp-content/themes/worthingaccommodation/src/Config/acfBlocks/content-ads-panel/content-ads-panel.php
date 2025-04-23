@@ -20,11 +20,11 @@ if (!$is_preview && !$generic_block_settings['hide_panel']) {
                 </div>
                 <div class="content-container__col2">
 
-                    <div class="popular-accommodation-heading">
+                    <div class="popular-accommodation-heading animate fade-in">
                         <h3>Popular Accommodation</h3>
                     </div>
 
-                    <div class="popular-accommodation">
+                    <div class="popular-accommodation animate animate fade-in">
 
                         <?php foreach ($properties as $property) {
 

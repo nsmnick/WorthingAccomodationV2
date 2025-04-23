@@ -16,14 +16,14 @@ if (!$is_preview && !$generic_block_settings['hide_panel']) {
             <div class="content-container">
                 <div class="content-container__col1">
 
-                    <h2 class="icon-underline">Some of our many guest testimonials</h2>
+                    <h2 class="icon-underline animate fade-in">Some of our many guest testimonials</h2>
 
                     <?php foreach ($quotes as $quote) {
 
                         $quote_content = get_post_meta($quote->ID, 'quote', true);
                         $quote_by = get_post_meta($quote->ID, 'quote_by', true);
 
-                        echo '<div class="quote">';
+                        echo '<div class="quote animate fade-in">';
                         echo '<div class="quotemarks"></div>';
                         echo '<div class="quotecontent">' . $quote_content . '</div>';
                         echo '<div class="quoteby">' . $quote_by . '</div>';
@@ -36,11 +36,11 @@ if (!$is_preview && !$generic_block_settings['hide_panel']) {
                 <div class="content-container__col2">
 
 
-                    <div class="popular-accommodation-heading">
+                    <div class="popular-accommodation-heading animate animate fade-in">
                         <h3>Popular Accommodation</h3>
                     </div>
 
-                    <div class="popular-accommodation">
+                    <div class="popular-accommodation animate animate fade-in">
 
                         <?php foreach ($properties as $property) {
 

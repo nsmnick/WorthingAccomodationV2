@@ -44,85 +44,62 @@ while (have_posts()) {
 
         <div class="container">
 
-
-            <div class="gallery-container animate fade-in">
-
-                <?php
-                $slider_html = '';
-                $thumbs_html = '';
-
-                $photo_gallery = get_field('gallery');
-
-                if ($photo_gallery) {
-
-                    foreach ($photo_gallery as $key => $image) {
-
-                        $slider_html .= '
-                            <div class="property-gallery-slider__slide">
-                                ' . \Theme\Utils::get_image_html($image) . '
-                            </div>';
-
-                        $thumbs_html .= '<div class="property-thumbs-slider__slide">'
-                            . \Theme\Utils::get_image_html($image)
-                            . '</div>';
-                    }
-
-                ?>
-
-
-                    <div class="property-gallery-slider">
-                        <div class="property-gallery-slider__slides-wrapper">
-                            <?php echo $slider_html;
-                            ?>
-                        </div>
-
-                        <div class="property-gallery-slider__controls">
-                            <div class="property-gallery-slider__nav-button property-gallery-slider__nav-button--prev"></div>
-                            <div class="property-gallery-slider__nav-button property-gallery-slider__nav-button--next"></div>
-                        </div>
-
-                    </div>
-
-                    <div thumbsSlider="" class="property-thumbs-slider">
-                        <div class="property-thumbs-slider__slides-wrapper">
-                            <?php echo $thumbs_html;
-                            ?>
-                        </div>
-                    </div>
-
-                <?php
-                }
-                ?>
-
-            </div>
-
-
             <div class="article-container">
-                <div class="article-container__col1  animate fade-up">
+                <div class="article-container__col1">
 
-                    <div class="article">
-                        <div class="wysiwyg-container">
-                            <?php echo the_content();
-                            ?>
+
+
+                    <?php
+                    $slider_html = '';
+                    $thumbs_html = '';
+
+                    $photo_gallery = get_field('gallery');
+
+                    if ($photo_gallery) {
+
+                        foreach ($photo_gallery as $key => $image) {
+
+                            $slider_html .= '
+                                <div class="property-gallery-slider__slide">
+                                    ' . \Theme\Utils::get_image_html($image) . '
+                                  </div>';
+
+                            $thumbs_html .= '<div class="property-thumbs-slider__slide">'
+                                . \Theme\Utils::get_image_html($image)
+                                . '</div>';
+                        }
+
+                    ?>
+
+                        <div class="gallery-container">
+                            <div class="property-gallery-slider">
+                                <div class="property-gallery-slider__slides-wrapper">
+                                    <?php echo $slider_html;
+                                    ?>
+                                </div>
+
+                                <div class="property-gallery-slider__controls">
+                                    <div class="property-gallery-slider__nav-button property-gallery-slider__nav-button--prev"></div>
+                                    <div class="property-gallery-slider__nav-button property-gallery-slider__nav-button--next"></div>
+                                </div>
+
+                            </div>
+
+                            <div thumbsSlider="" class="property-thumbs-slider">
+                                <div class="property-thumbs-slider__slides-wrapper">
+                                    <?php echo $thumbs_html;
+                                    ?>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-
-                    <div class="cta-actions mobile-only">
-                        <a target="_blank" rel="noopener noreferrer" href="<?php $book_now_link; ?>" class="button">BOOK NOW</a>
-                        <a href="mailto:<?php echo get_field('email_address', 'options'); ?>" class="button">ENQUIRE</a>
-                    </div>
-
-                    <div class="share-container">
-                        <h3 class="label">Share this property with others</h3>
-                        <?php echo \Theme\Utils::share_article(get_the_ID()); ?>
-                    </div>
+                    <?php
+                    }
+                    ?>
 
 
                 </div>
-
-
-                <div class="article-container__col2 animate fade-up">
-
+                <div class="article-container__col2">
 
                     <h3>Property Information</h3>
 
@@ -143,9 +120,43 @@ while (have_posts()) {
 
 
                     <div class="cta-actions desktop-only">
-                        <a target="_blank" rel="noopener noreferrer" href="<?php $book_now_link; ?>" class="button">BOOK NOW</a>
+                        <a target="_blank" rel="noopener noreferrer" href="<?php echo $book_now_link; ?>" class="button">BOOK NOW</a>
                         <a href="mailto:<?php echo get_field('email_address', 'options'); ?>" class="button">ENQUIRE</a>
                     </div>
+
+
+
+                </div>
+            </div>
+
+
+            <div class="article-container">
+                <div class="article-container__col1  animate fade-up">
+
+                    <div class="article">
+                        <div class="wysiwyg-container">
+                            <?php echo the_content();
+                            ?>
+                        </div>
+                    </div>
+
+                    <div class="cta-actions mobile-only">
+                        <a target="_blank" rel="noopener noreferrer" href="<?php echo $book_now_link; ?>" class="button">BOOK NOW</a>
+                        <a href="mailto:<?php echo get_field('email_address', 'options'); ?>" class="button">ENQUIRE</a>
+                    </div>
+
+                    <div class="share-container">
+                        <h3 class="label">Share this property with others</h3>
+                        <?php echo \Theme\Utils::share_article(get_the_ID()); ?>
+                    </div>
+
+
+                </div>
+
+
+                <div class="article-container__col2 animate fade-up">
+
+
 
 
 

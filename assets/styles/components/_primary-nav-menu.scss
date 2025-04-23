@@ -1,6 +1,6 @@
 .main-menu {
   background-color: getcolor("green");
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 74px);
   position: absolute;
   top: 74px;
@@ -8,7 +8,7 @@
   bottom: 0;
   right: 0;
   z-index: 2;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   padding-top: 20px;
 
   // .mobile-home-menu {
@@ -30,8 +30,9 @@
   }
 
   &--open {
-    transform: translateX(0);
-    transition: transform 0.2s ease-in-out;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+    width: 100%;
   }
 
   ul {
@@ -64,7 +65,7 @@
         //   background-color: red;
         display: block;
         color: getcolor("white");
-        font-family: getfontfamily("buttons");
+        font-family: get-font-family("buttons");
         text-decoration: none;
         padding: 10px 20px;
         transition: color 0.3s linear;
@@ -193,7 +194,7 @@
 
         .sub-menu {
           display: none;
-          min-width: 200px;
+          min-width: 230px;
           height: auto;
           background-color: getcolor("grey");
           box-shadow: 0 0 4px rgb(getcolorrgb("black") / 25%);

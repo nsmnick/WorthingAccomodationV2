@@ -25,19 +25,23 @@ if (!$is_preview && !$generic_block_settings['hide_panel']) {
 
                     foreach ($properties as $property) {
                         echo '<div class="content-container__col">';
-                        echo '<a href="' . get_the_permalink($property->ID) . '">';
-                        echo '<div class="property-card">';
+                            echo '<a href="' . get_the_permalink($property->ID) . '">';
+                       
+                                echo '<div class="property-card">';
 
-                        echo '<div class="property-card__image">';
-                        echo \Theme\Utils::get_image_html(get_post_thumbnail_id($property->ID));
-                        echo '</div>';
+                                    echo '<div class="property-card__image">';
+                                    echo \Theme\Utils::get_image_html(get_post_thumbnail_id($property->ID));
+                                    echo '</div>';
 
-                        echo '<div class="property-card__content">';
-                        echo '<h3>' . $property->post_title . '</h3>';
-                        echo '</div>';
-                        echo '</div>';
-                        echo '</a>';
-                        echo '</div>';
+                                    echo '<div class="property-card__content">';
+                                        echo '<h3>' . $property->post_title . '</h3>';
+                                    echo '</div>';
+
+                                echo '</div>';
+                                
+                            echo '</a>';
+                        
+                            echo '</div>';
                     }
 
                     ?>

@@ -4,7 +4,7 @@ import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import eslint from "vite-plugin-eslint";
 
 export default defineConfig({
-  base: "/wp-content/themes/worthingaccomodation/dist",
+  base: "/wp-content/themes/worthingaccommodation/dist",
   server: {
     port: 5173,
     host: "0.0.0.0",
@@ -18,7 +18,7 @@ export default defineConfig({
         login: "./assets/login.js",
       },
     },
-    outDir: "./public/wp-content/themes/worthingaccomodation/dist",
+    outDir: "./public/wp-content/themes/worthingaccommodation/dist",
     copyPublicDir: false,
     assetsDir: "assets",
     cssCodeSplit: true,

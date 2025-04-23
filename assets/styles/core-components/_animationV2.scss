@@ -19,6 +19,12 @@
   }
 }
 
+.scrolled.fade-in-quick {
+  @include bp(lap) {
+    animation: fade-in 0.2s ease-out both;
+  }
+}
+
 .scrolled.fade-up {
   @include bp(lap) {
     animation: fade-up 1s ease-out both;

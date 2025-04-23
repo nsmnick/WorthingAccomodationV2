@@ -13,12 +13,14 @@ html {
 }
 
 body {
-  background-color: get-color("white");
+  background-color: getcolor("white");
   font-family: get-font-family("main");
-  color: get-color("green");
+  //color: getcolor("green");
 
   padding: 0;
   margin: 0;
+
+  overflow: hidden;
 
   box-sizing: border-box;
   font-weight: 400;
@@ -45,7 +47,7 @@ h1 {
 
 // Page Headers
 h2 {
-  font-size: to-rem(32);
+  font-size: to-rem(28);
   line-height: 1.2;
   font-weight: 500;
   margin: 0 0 to-rem(40);
@@ -107,14 +109,11 @@ p {
 }
 
 a {
-  text-decoration: underline;
-  color: getcolor("dark_grey");
-
-  &.no-ul {
-    text-decoration: none;
-  }
+  color: getcolor("blue");
+  text-decoration: none;
 
   &:hover {
     color: getcolor("blue");
+    text-decoration: underline;
   }
 }

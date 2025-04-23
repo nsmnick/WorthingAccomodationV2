@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0">
 
     <title>
         <?php
@@ -11,7 +11,7 @@
         ?>
     </title>
 
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <link rel=" pingback" href="<?php bloginfo('pingback_url'); ?>">
     <link rel="shortcut icon" type="image/png" href="<?php echo THEMEROOT; ?>/images/favicon.png">
 
     <?php wp_head(); ?>
@@ -71,7 +71,7 @@
 
         </div>
 
-        <div class="page-menu">
+        <div class="page-menu animate fade-in-quick">
 
             <div class="container">
 

@@ -53,7 +53,7 @@ if (!$is_preview) {
                 </div>
 
                 <div class="button-center-container mt-60">
-                    <a href="#" class="button">Read more testimonials</a>
+                    <a href="/testimonials/" class="button">Read more testimonials</a>
                 </div>
 
             </div>

@@ -1,0 +1,185 @@
+body div#menu-secondary .menu li li:hover > a {
+    background: darkslateblue !important;
+}
+.booknow_button {
+    display: none !important;
+} 
+
+#site-description {
+	display: none;
+}
+
+.post_img a h2 {	
+	color: #000	!important;
+}
+
+.post_img a h2 span.heading {	
+	text-shadow: 0px 1px 10px rgba(0,0,0,.7);
+	font-size: 35px !important;
+	margin-bottom: 10px !important;
+	color: red;	
+}
+
+
+.post_img a h2 span.sub-heading {	
+	text-shadow: 0px 1px 10px rgba(0,0,0,.7);;
+	font-size: 55px !important;
+}
+
+.phone-number h3 {
+	text-align: right !important;
+}
+
+.home .listing_post .listing_post_wrapper .hentry .meta-wrapper {
+	display: none;
+}
+
+.testimonials .testimonials_wrap img.avatar {
+	display: none;
+}
+
+
+
+.booking_full_width_inner .widget {
+	margin-bottom: 40px !important;
+}
+
+#supreme_recent_post-2 > .widget-inside {
+	background: rgba(0,0,0,0.03);
+	padding: 20px;
+}
+
+.footer_bg {
+	background-color: #777;
+	color: white;
+}
+
+.social_media > h3.widget-title {
+	color: white;	
+}
+
+.social_media ul li a {
+	border-color: #fff !important;	
+}
+
+.social_media_list li .fa {
+	color: white;
+}
+
+
+
+.footer_widget_wrap .col_3 {
+		text-align: right;
+		width: 57%;
+}
+
+.footer a {
+		color: #fff !important
+}
+.site-link {
+	color: #fff !important
+}
+
+div#menu-footer .menu li a {
+		color: #fff !important;
+}
+
+
+.breadcrumb_bg {
+	min-height: 170px !important;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.breadcrumb_bg {
+	margin: 0px 0px 50px !important;
+}
+}
+
+@media screen and (max-width: 480px) {
+	.breadcrumb_bg {
+		min-height: 120px !important;
+	}
+}
+	
+@media screen and (max-width: 768px) {
+	
+	
+	div#menu-footer {
+		float: none;
+		margin-bottom: 20px;
+	}
+
+.footer-content {
+		text-align: center;
+			margin-bottom: 20px;
+	}
+	
+div#menu-footer .menu li a {
+		color: #fff !important;
+}
+	
+.footer_widget_wrap .col_1 {
+	text-align: center;
+	}
+	
+.footer_widget_wrap .col_3 {
+	text-align: center;
+		width: 100%;
+	}
+	
+	li {
+		padding: 0px !important;
+	}
+}
+
+#sidebar-primary {
+padding-top: 30px;	
+}
+
+.popular_post ul li .post_data h3 a {
+		font-family: arial;
+		font-size: 14px;
+}
+
+.post_data p {
+		display: none;
+}
+
+
+.content-center {
+	text-align: center;
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+.content-divider {
+	
+	background-color: #001499;
+	width: 400px;	
+	margin: 40px auto;	
+	
+}
+
+
+.ui-tabs li:nth-last-child(-n+2) {
+display: none
+}
+
+
+
+@media screen and (max-width: 768px) {
+.post-meta p {
+	font-size: 11px;
+}
+	
+	
+	.booking_full_width_section .booking_full_width_inner .widget-title {
+		font-size: 28px !important;
+		text-align: center;
+		
+	}
+	
+}
+
+

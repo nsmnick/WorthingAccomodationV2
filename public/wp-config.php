@@ -54,20 +54,10 @@ define('DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'worthingaccomodationv2'));
 define('DB_USER', getenv_docker('WORDPRESS_DB_USER', 'root'));
 define('DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'root'));
 
-// Leap Staging
-// define('DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'dbhwgelrgvw0ww'));
-// define('DB_USER', getenv_docker('WORDPRESS_DB_USER', 'urj8nqp4fbjcv'));
-// define('DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'k50eaoa2i4no'));
-
-// Pragmatic Staging
-// define('DB_NAME', 'dbkmu8xefkwtg8');
-// define('DB_USER', 'uwpiykfof18m3');
-// define('DB_PASSWORD', '0smkdw1grtjv');
-
-// Pragamatic Live
-// define('DB_NAME', 'dbphw7ffpv0uga');
-// define('DB_USER', 'ubztfqgr8rvuw');
-// define('DB_PASSWORD', '5f)1~&]HF2%1sdfsdfs');
+// LIVE
+// define('DB_NAME', 'dbuu7ygkawk4s9');
+// define('DB_USER', 'uo6s5qt3jjxbg');
+// define('DB_PASSWORD', 'geigulniabuv');
 
 
 

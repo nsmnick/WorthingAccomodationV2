@@ -1,0 +1,366 @@
+
+	.front-page-2 .booking_full_width_section .listing_post_wrapper .meta-wrapper h2 a:hover {
+		color: #ffffff;
+	}
+
+	body,
+	/*#branding, #branding1,
+	#branding:before, #branding1:before,*/
+	.calendar_widget td span.past,
+	.calendar_box table td.title {  background-color: #ffffff !important; }
+
+	.booking_small_widget .reservation_frm #date-range-field,
+	.booking_small_widget .reservation_frm .select-wrap select,
+	.booking_small_widget .reservation_frm input[type="submit"],
+	.testimonials_info .testimonial input[type="submit"],
+	.testimonials_info .testimonial .b_submit,
+	.singular .widget_tmplchateaulist .flex-direction-nav li a:hover{
+		 background-color:#ffffff;
+		border-color:#ffffff;
+	}
+	body .booking_small_widget .select-wrap span.select{
+		 background-color:#ffffff !important;
+		border-color:#ffffff !important ;
+	}
+	.testimonials_info .testimonial img{border-color: #ffffff;}
+
+	div#menu-secondary .menu li a, div#menu-secondary1 .menu li a, .nav_bg .widget-nav-menu li a,
+	.breadcrumb_bg .entry-title, .breadcrumb_bg .crumb_wrap h1,
+	.booking_small_widget p, .sidebar .author-section .contacts_wrap .email a:hover,
+	.author-section a.button, a.button,
+	.About.Us .templatic_about_us .booknow_btn,
+	button, input[type="reset"], input[type="submit"], input[type="button"]{color:#ffffff;}
+
+	.author-section a.button{border-color: #ffffff;}
+
+	.testimonials_info:before, .booking_full_width_inner:before{border-top-color: #ffffff;}
+	.testimonials_info + .sep:after, .booking_full_width_inner + .sep:after{border-bottom-color: #ffffff;}
+	
+	body div#menu-secondary .menu li li:hover > a,
+	body div#menu-secondary1 .menu li li:hover > a,
+	body div#menu-secondary .menu li li a:hover,
+	body div#menu-secondary1 .menu li li a:hover,
+	body div#menu-subsidiary .menu li li a:hover,
+	body .nav_bg .widget-nav-menu li li a:hover,
+	body .booking_manager_tab ul.view_mode li a{
+		 background-color:#ffffff;
+	}
+
+
+	
+	.home_full_slider #booking,
+	.flexslider .flex-direction-nav li a,
+	.mbtn,
+	.testimonial_wrapper .nav-control a,
+	.subscribe_cont form input[type="submit"],
+	ul.send_inquiry li a,
+	ul.send_inquiry li.booknow_button a:hover{
+		background: #5c9c7b;
+	}
+
+	.breadcrumb_bg {
+		background: #5c9c7b !important;
+	}
+
+	.front-page-2 .widget h3, .front-page-2 .widget.title, .front-page-2 .widget-title, .front-page-2 .widget-search .widget-title,
+	.front-page-2 .main-content-v2 .listing_post_wrapper .meta-wrapper h2 a,
+	.rh-listing article .entry h2 a,
+	a.moretag	{
+		color: #5c9c7b;
+	}
+
+	ul li a:hover, ol li a:hover,
+	ins span.amount, .amount,
+	.arclist h2,
+	.arclist ul li a:hover,
+	.home_page_content .Flicker h3, .templatic_slider .flexslider h2,
+	.home_page_content .listing_post .post h2 a:hover,
+	.custom_content_list .listcont b,
+	.social_media ul li a,
+	div#menu-footer .menu li a:hover, div#menu-footer .menu li.current-menu-item a,
+	.singular .entry-content h3, .singular .title-container h3, h2.custom_field_title, .row .title-container h1,
+	.widget h3, .widget.title, .widget-title, .widget-search .widget-title, .wpcf7-form h2, .arclist h2, #comments-number, #reply-title,
+	.singular .entry-content h3, .singular .title-container h3, .entry-content h2,
+	.home_page_content h3.widget-title, .title-container h3, .entry-content h2,
+	.content_ h1,
+	body .form_row label:hover,
+	body dialog .close-reveal-modal:before, body .reveal-modal .close-reveal-modal:before, body .modal_close:before,
+	.spl-list ul li figure{
+		color: #5c9c7b;
+	}
+
+	.booking_full_width_section .booking_small_widget h3,
+	.testimonials_info .testimonial .testimonial_text,
+	.booking_full_width_section .booking_full_width_inner .widget-title,
+	.home-page-bottom-showcase .widget-title, #loop_taxonomy .post h2 a,
+	.mega-menu ul.mega li ul.sub-menu ul li a:hover,
+	.pos_navigation a:hover{
+		color: #5c9c7b !important;
+	}
+
+		.home_page_content .Flicker h3, .templatic_slider .flexslider h2,
+	.widget h3, .widget.title, .widget-title, .widget-search .widget-title,
+	.email_to_friend .h3,
+	.singular .entry-content h3, .singular .title-container h3, .entry-content h2, h2.custom_field_title, .row .title-container h1,
+	.footer_widget_wrap .widget-title,
+	.testimonials_info,
+	.home_page_content > .widget .widget-title,
+	.home .flexslider .slides > li h2,
+	.booking_full_width_section .booking_full_width_inner .our_services li:hover i,
+	.testimonials .testimonials_wrap cite,
+	.testimonials_info .testimonial input[type="submit"]:hover,
+	.testimonials_info .testimonial .b_submit:hover,
+	button:hover, input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:hover, a.button:hover, .button:hover,
+	#datepicker-calendar span.booking_calendar_link a,
+	body div.datepicker th a.datepickerMonth,
+	body div.datepicker th,
+	.singular .widget_tmplchateaulist .flexslider ul li:hover h3 a,
+	.blog .hfeed .hentry .entry-header .entry-title a{
+		color: #5c9c7b;
+	}
+
+		button, 
+	input[type="reset"], 
+	input[type="submit"], 
+	input[type="button"], 
+	a.button, 
+	.button,
+	body a.button.alt:hover, body button.button.alt:hover, body input.button.alt:hover, body #respond input#submit.alt:hover, body #content input.button.alt:hover,
+	body.woocommerce a.button, body.woocommerce button.button, body.woocommerce input.button, body.woocommerce #respond input#submit, body.woocommerce #content input.button, body.woocommerce-page a.button, body.woocommerce-page button.button, body.woocommerce-page input.button, body.woocommerce-page #respond input#submit, body.woocommerce-page #content input.button, #searchform input[type="submit"], body.woocommerce .widget_layered_nav_filters ul li a, body.woocommerce-page .widget_layered_nav_filters ul li a, div.woocommerce form.track_order input.button,
+	body.woocommerce nav.woocommerce-pagination ul li a, body.woocommerce-page nav.woocommerce-pagination ul li a, body.woocommerce #content nav.woocommerce-pagination ul li a, body.woocommerce-page #content nav.woocommerce-pagination ul li a,
+	div#menu-secondary .menu li a:hover, div#menu-secondary1 .menu li a:hover, div#menu-secondary .menu li:hover > a, div#menu-secondary1 .menu li:hover > a, div#menu-secondary .menu li.current-menu-item > a, div#menu-secondary1 .menu li.current-menu-item > a, div#menu-subsidiary .menu li.current-menu-item > a
+	{
+		 background-color: #5c9c7b;
+		border-color: #5c9c7b;
+	}
+
+			div.product .woocommerce_tabs ul.tabs li.active, #content div.product .woocommerce_tabs ul.tabs li.active,
+	.social_media ul li a abbr, .About.Us .templatic_about_us .booknow_btn,
+	body div.datepicker .datepickerFirstView th a.datepickerGoPrev, body div.datepicker .datepickerLastView th a.datepickerGoNext,
+	div#menu-secondary .menu li li a, div#menu-secondary1 .menu li li a, div#menu-subsidiary .menu li li a, .nav_bg .widget-nav-menu li li a,
+	.comment-reply-link, .comment-reply-login{
+		 background-color: #5c9c7b;
+	}
+
+			div.product .woocommerce_tabs ul.tabs,
+	a.button, .About.Us .templatic_about_us .booknow_btn,
+	input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input.input-text:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, select:focus, textarea:focus, span.booknow_span a.booknow_btn:focus,
+	.spl-list ul li figure	{
+		border-color: #5c9c7b;
+	}
+
+		.home .listing_post .listing_post_wrapper .hentry .meta-wrapper{background:rgba(92,156, 123,0.8);}
+   
+
+
+	body,
+	ul li a, ol li a,
+	#breadcrumb a, .breadcrumb a, .bbp-breadcrumb a,
+	div#menu-primary .menu li a,
+	.arclist ul li a,
+	ul.products li.product h3 a,
+	.woocommerce_message, .woocommerce_error, .woocommerce_info,
+	.home_page_content .templatic_slider ul.slides li .post_list h2 a,
+	.home_page_banner .widget_text .textwidget,
+	.byline a, .entry-meta a,
+	.home_page_content .listing_post .post h2 a,
+	.custom_content_list .listcont,
+	.social_media ul li a:hover,
+	.view_counter b,
+	.comment-meta a,
+	.comment-author,
+	.testimonials_info .testimonial .testimonial_text p,
+	.testimonials_info .call_info,
+	body .booking_small_widget .select-wrap span.select,
+	.booking_small_widget .select-wrap span.select:after,
+	#date-range-field i,
+	.testimonials_info .call_info ul li i,
+	.sidebar .widget .textwidget ul.our_services li i,
+	body #date-range-field a,
+	body div.datepicker a, body div.datepicker a:hover,
+	body div.datepicker .datepickerFirstView th a.datepickerGoPrev, body div.datepicker .datepickerLastView th a.datepickerGoNext,
+	.home-page-bottom-showcase .flexslider .flex-viewport li h3 a, .widget_tmplchateaulist .flexslider .flex-viewport li h3 a,
+	body .booking_manager_tab ul.view_mode li a,
+	.singular #silde_gallery .flex-direction-nav li a,
+	.singular #silde_gallery .flex-direction-nav li a:hover{
+		color: #5c9c7b;
+	}
+	.testimonials_info .call_info ul li i,
+	body .booking_manager_tab ul.view_mode li a{
+		border-color:  #5c9c7b;
+	}
+
+	button:hover, 
+	input[type="reset"]:hover, 
+	input[type="submit"]:hover, 
+	input[type="button"]:hover, 
+	a.button:hover, 
+	.button:hover,
+	body a.button.alt, body button.button.alt, body input.button.alt, body #respond input#submit.alt, body #content input.button.alt,
+	body.woocommerce a.button:hover, body.woocommerce button.button:hover, body.woocommerce input.button:hover, body.woocommerce #respond input#submit:hover, body.woocommerce #content input.button:hover, body.woocommerce-page a.button:hover, body.woocommerce-page button.button:hover, body.woocommerce-page input.button:hover, body.woocommerce-page #respond input#submit:hover, body.woocommerce-page #content input.button:hover, #content input.button:hover, #searchform input[type="submit"]:hover, body.woocommerce .widget_layered_nav_filters ul li a:hover, body.woocommerce-page .widget_layered_nav_filters ul li a:hover, div.woocommerce form.track_order input.button:hover,
+	.comment-reply-link:hover, .comment-reply-login:hover,
+	body.woocommerce nav.woocommerce-pagination ul li a:hover, body.woocommerce-page nav.woocommerce-pagination ul li a:hover, body.woocommerce #content nav.woocommerce-pagination ul li a:hover, body.woocommerce-page #content nav.woocommerce-pagination ul li a:hover, body.woocommerce nav.woocommerce-pagination ul li span.current, body.woocommerce-page nav.woocommerce-pagination ul li span.current, body.woocommerce #content nav.woocommerce-pagination ul li span.current, body.woocommerce-page #content nav.woocommerce-pagination ul li span.current,
+	#reservation_frm input[type="submit"]:hover,
+	span.booknow_span a.booknow_btn:hover {
+		 background-color: #5c9c7b;
+		border-color: #5c9c7b; 	}
+
+			.flex-control-paging li a,
+	.social_media ul li a:hover abbr,
+	.booking_full_width_section .booking_full_width_inner .our_services li:hover i,
+	a.button::after{
+		 background-color: #5c9c7b; 	}
+
+			.total_amount_title,
+	body #date-range-field,
+	#footer,
+	.booking_full_width_section .booking_full_width_inner .our_services li:hover, .sidebar .author-section .contacts_wrap .email a,
+	body div#menu-footer .menu li a:after {
+		 color: #5c9c7b !important; 	}
+
+
+	input[type="date"], 
+	input[type="datetime"], 
+	input[type="datetime-local"], 
+	input[type="email"], 
+	input[type="month"], 
+	input[type="number"], 
+	input[type="password"], 
+	input[type="search"], 
+	input[type="tel"], 
+	input[type="text"], 
+	input.input-text, 
+	input[type="time"], 
+	input[type="url"], 
+	input[type="week"], 
+	select, 
+	textarea,
+	.comment-meta,
+	.entry-meta,
+	.byline, .entry-meta,
+	div#menu-primary .menu li a:hover, div#menu-primary .menu li:hover > a, div#menu-primary .menu li.current-menu-item a,
+	.arclist ul li span.arclist_comment,
+	.arclist ul li,
+	.pagination .current, .comment-pagination .current, .bbp-pagination .current,
+	.popular_post ul li .post_data p .date, .popular_post ul li .post_data p .views,
+	#breadcrumb, .breadcrumb, .bbp-breadcrumb,
+	#content .pos_navigation .post_left a,
+	#content .pos_navigation .post_right a,
+	body #date-range-field {
+		 color: #242424; 	}
+
+		.flex-control-paging li a:hover, .flex-control-paging li a.flex-active,
+	table.calendar_widget td.days,
+	.testimonials #nav a.activeSlide,
+	body tbody.datepickerDays td.datepickerSelected{
+		 background-color: #242424; 	}
+
+		.singular .entry-content h3:before, .singular .title-container h3:before, .entry-content h2:before, h2.custom_field_title:before, .booking_small_widget h3::before, .home-page-bottom-showcase .widget-title::before, .row .title_space:before, .sidebar .widget-title:before, .About.Us .widget-title:before,
+	.singular .entry-content h3:after, .singular .title-container h3:after, .entry-content h2:after, h2.custom_field_title:after, .row .title_space:after, .sidebar .widget-title:after,
+	.home_page_content > .widget .widget-title:before, .home_page_content > .widget .widget-title:after, .home_two_column_section .widgettitle:before{
+		border-color:#242424;
+	}
+
+
+	.home_full_slider .flexslider .flex-direction-nav li a:hover,
+	.flexslider .flex-direction-nav li a:hover,
+	.mbtn:hover,
+	.testimonial_wrapper .nav-control a:hover,
+	.subscribe_cont form input[type="submit"]:hover,
+	.singular .flexslider ul.flex-direction-nav li a:hover,
+	.front-page-2 .booking_full_width_section .listing_post_wrapper .meta-wrapper,
+	.home_full_slider #booking .booking_small_widget .reservation_frm input[type="submit"],
+	body .mega-menu ul.mega li.current_page_item a, body .mega-menu ul.mega li a:hover, body .mega-menu ul.mega li:hover > a,
+	body .mega-menu ul.mega li ul.sub-menu,
+	body #datepicker-calendar,
+	body div.datepicker table tbody.datepickerDays td.datepickerToday,
+	body .widget.booking_small_widget h3,
+	.singular #silde_gallery .flex-direction-nav li a:hover,
+	.ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active a,
+	.booking_small_widget .reservation_frm input[type="submit"],
+	ul.send_inquiry li a:hover,	
+	ul.send_inquiry li.booknow_button a{
+		background: #001499;
+	}
+
+	.home_full_slider #booking .booking_small_widget .reservation_frm input[type="submit"]:hover,
+	.widget .ad-banner-hz .btn-wrap a,
+	.rh-listing article .entry h2 a:hover,
+	footer a:hover,
+	#breadcrumb, #breadcrumb a, .breadcrumb a, .bbp-breadcrumb a,
+	.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a:hover,
+	a.moretag:hover	{
+		color: #001499;
+	}
+
+	/*body .mega-menu .nav_bg,
+	div#menu-secondary .wrap, div#menu-secondary1 .wrap, div#menu-subsidiary .wrap, .nav_bg .widget-nav-menu nav,
+
+		#container .header_container .header_strip .sticky_main,
+
+	button, input[type="reset"], input[type="submit"], input[type="button"], a.button, .button,
+	.testimonials_info .call_info, .booking_small_widget .reservation_frm,
+	.testimonials_info .testimonial input[type="submit"]:hover,
+	.testimonials_info .testimonial .b_submit:hover,
+	.loop-nav span.previous, .loop-nav span.next, .pagination .page-numbers, .comment-pagination .page-numbers, .bbp-pagination .page-numbers, body div.datepicker th,
+	body div.datepicker table tbody.datepickerDays td.datepickerToday,
+	.social_media ul li a:hover abbr, .social_media ul li a:hover .social_icon,
+	span.booknow_span a.booknow_btn,
+	.singular #silde_gallery .flex-direction-nav li a:hover,
+	.booking_full_width_section .booking_full_width_inner .wrap > div:first-child,
+	.booking_full_width_section .booking_small_widget h3,
+	.booking_full_width_section .booking_full_width_inner .wrap > div:first-child, .booking_full_width_section .booking_full_width_inner .wrap > div#booking,
+	.About.Us .templatic_about_us .booknow_btn:hover,
+	.flex-direction-nav li a:hover*/ {
+		 background-color: #001499; 	}
+	
+	
+	a,div#menu-secondary .menu li a:hover, div#menu-secondary1 .menu li a:hover, div#menu-secondary .menu li:hover > a, div#menu-secondary1 .menu li:hover > a, div#menu-secondary .menu li.current_page_item > a, div#menu-secondary1 .menu li.current_page_item > a,
+	.testimonials_info .testimonial input[type="submit"],
+	ul li a:hover, ol li a:hover,
+	.sidebar .widget ul.categories li:hover:before, .footer_widget_wrap ul li:hover:before,
+	.booking_full_width_section .booking_full_width_inner .our_services li,
+	.sidebar .author-section .contacts_wrap h4 a,
+	#reservation_frm input[type="submit"]:hover,
+	body div#menu-secondary .menu li li a, body div#menu-secondary1 .menu li li a, body div#menu-subsidiary .menu li li a, body .nav_bg .widget-nav-menu li li a,
+	.testimonials_info .testimonial input[type="submit"], .testimonials_info .testimonial .b_submit{
+		 color:#001499; 	}
+
+	.byline a:hover, .entry-meta a:hover,
+	.blog .hfeed .hentry .entry-header .entry-title a:hover,
+	#loop_taxonomy.grid .post .entry .entry-title a:hover, #loop_taxonomy.list .post .entry .entry-title a:hover,
+	body .booking_manager_tab .sort_options ul.view_mode li a:hover::before, body .booking_manager_tab .sort_options ul.view_mode li a.active::before, body .booking_manager_tab .sort_options ul.view_mode li a.active, body .booking_manager_tab .sort_options ul.view_mode li a:hover,
+	.pos_navigation a{
+			 color:#001499 !important; 	}    
+
+		.social_media ul li a abbr, .social_media ul li a .social_icon,
+	div#menu-secondary .wrap,  div#menu-secondary1 .wrap, div#menu-subsidiary .wrap, .nav_bg .widget-nav-menu nav, .social_media ul li a:hover abbr, .social_media ul li a:hover .social_icon,
+	.booking_full_width_section .booking_full_width_inner .our_services i,
+	.About.Us .templatic_about_us .booknow_btn:hover,
+	div#menu-secondary .menu li li a, div#menu-secondary1 .menu li li a, div#menu-subsidiary .menu li li a, .nav_bg .widget-nav-menu li li a,
+	a.button,
+	body .booking_manager_tab .sort_options ul.view_mode li a:hover::before, body .booking_manager_tab .sort_options ul.view_mode li a.active::before, body .booking_manager_tab .sort_options ul.view_mode li a.active, body .booking_manager_tab .sort_options ul.view_mode li a:hover{
+		 border-color: #001499; 	}
+
+	.allow_booking, .calendar_widget td span.no_event{  background: #001499 !important; }
+	.testimonials_info .call_info ul li {border-color:rgba(255,255,255,0.5);}
+	
+	.social_media ul li a,
+	body #datepicker-calendar	{ border-color: #001499!important; }
+	body div.datepicker th{background:rgba(0,20, 153,0.8);}
+	
+	.ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active a::after { border-left-color: #001499; }
+
+
+		.footer_bg{background-image:none !important;}
+
+	#container .header_container .header_strip .sticky_main,
+	.footer_bg, body .header_container #header-main,
+	.home .flexslider .slides > li h2 p,
+	body .mega-menu ul.mega li .sub-container{
+		 background-color: #ffffff;
+	}
+	body .room_left, .testimonials #nav a{  background:#ffffff; }
+
+	#site-description{color:#ffffff; }
+
